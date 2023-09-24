@@ -1,5 +1,5 @@
-import { useTheme } from "../customHooks/Contexts";
-import { choices } from "../utils/tokens";
+import { useTheme } from "../../customHooks/Contexts";
+import { choices } from "../../utils/tokens";
 
 const ThemeButton = () => {
   const { theme, toggleTheme } = useTheme();

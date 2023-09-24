@@ -25,6 +25,7 @@ const Cart = () => {
           </button>
         </div>
       ))}
+      <hr />
       <div>
         <h2>Products</h2>
         {Products.map((item, index) => (
@@ -36,6 +37,7 @@ const Cart = () => {
           </div>
         ))}
       </div>
+      <hr />
     </div>
   );
 };

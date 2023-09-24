@@ -1,30 +1,17 @@
-import { Provider } from "react-redux";
-import Form from "./components/Form";
-import ThemeButton from "./components/ThemeButton";
-import ThemeProvider from "./components/ThemeProvider";
-import store from "./store";
-import Cart from "./components/cart/Cart";
+import Navbar from "./components/molecules/Navbar";
 
 function App() {
   return (
     <>
+      <Navbar />
       <div>
-        <h2>Form with useState</h2>
-        <Form />
-      </div>
-      <hr />
-      <div>
-        <ThemeProvider>
-          <h2>Button with useContext and Custom Hook</h2>
-          <ThemeButton />
-        </ThemeProvider>
-      </div>
-      <hr />
-      <div>
-        <Provider store={store}>
-          <h2>Shopping Cart with redux y redux toolkit</h2>
-          <Cart />
-        </Provider>
+        <h2>Aprendiendo React by Carlos Azaustre</h2>
+        <div>
+          <img
+            src="https://th.bing.com/th/id/OIP.GtqY8ha4GD6_p9N0ZL-cRAAAAA?pid=ImgDet&rs=1"
+            alt="book cover"
+          />
+        </div>
       </div>
     </>
   );
