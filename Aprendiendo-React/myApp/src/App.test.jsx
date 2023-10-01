@@ -1,5 +1,6 @@
 //import { describe, it, expect } from "vitest";
 
+//usa Vitest para probar el código
 describe("something truthy and falsy", () => {
   it("true to be true", () => {
     expect(true).toBe(true);

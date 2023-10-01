@@ -7,7 +7,7 @@ const ThemeButton = () => {
   const { black, white } = choices.color.base;
 
   return (
-    <button
+    <button role="Toggle" aria-label="ThemeOne"
       style={{
         backgroundColor: theme === Light ? white : black,
         color: theme === Light ? black : white,
