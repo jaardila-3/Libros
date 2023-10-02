@@ -6,6 +6,7 @@ import Hooks from "./components/routes/Hooks.jsx";
 import Redux from "./components/routes/Redux.jsx";
 import ErrorPage from "./error-page.jsx";
 import Users from "./components/routes/Users.jsx";
+import TestMocks from "./components/routes/testMocks";
 
 const routes = createBrowserRouter([
   {
@@ -28,7 +29,11 @@ const routes = createBrowserRouter([
       //return fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`);
       return params.id;
     },
-  }
+  },
+  {
+    path: "test-mocks",
+    element: <TestMocks />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
