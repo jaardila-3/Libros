@@ -14,7 +14,7 @@ const ThemeButton = () => {
       }}
       onClick={toggleTheme}
     >
-      Toggle Theme
+      Toggle Theme {theme}
     </button>
   );
 };
